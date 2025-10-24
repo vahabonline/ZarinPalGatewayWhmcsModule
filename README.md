@@ -40,7 +40,13 @@
 
 ###
 
-```php<br>$replace = array(<br> '1' => 'Q', '2' => 'W', '3' => 'E', '4' => 'Z',<br> '5' => 'N', '6' => 'M', '7' => 'L', '8' => 'Y',<br> '9' => 'U', '0' => 'D', ';' => 'V',<br>);<br>```
+```php
+$replace = array(
+    '1' => 'Q', '2' => 'W', '3' => 'E', '4' => 'Z',
+    '5' => 'N', '6' => 'M', '7' => 'L', '8' => 'Y',
+    '9' => 'U', '0' => 'D', ';' => 'V',
+);
+```
 <p align="right">در هنگام بازگشت از زرین‌پال، اطلاعات رمزگشایی شده و بررسی می‌شود.</p>
 
 ###
@@ -66,10 +72,11 @@
 ###
 
 <p align="right">در فایل callback، تأیید تراکنش از طریق API زیر انجام می‌شود:</p>
-POST <https://api.zarinpal.com/pg/v4/payment/verify.json>
+POST https://api.zarinpal.com/pg/v4/payment/verify.json
+
 <br>
 <p align="right">پارامترهای ارسال‌شده:</p>
-```
+```php
 {
     "merchant_id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
     "authority": "A00000000000000000000000000123456789",
@@ -78,7 +85,7 @@ POST <https://api.zarinpal.com/pg/v4/payment/verify.json>
 ```
 <br>
 <p align="right">در صورت موفقیت:</p>
-```
+```php
 {
     "data": {
         "code": 100,
