@@ -86,13 +86,14 @@ POST https://api.zarinpal.com/pg/v4/payment/verify.json
 
 <br>
 <p align="right">در صورت موفقیت:</p>
-```php
+<pre>
 {
     "data": {
         "code": 100,
         "ref_id": "1234567890"
     }
-}```
+}
+</pre>
 
 
 ###
