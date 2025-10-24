@@ -40,7 +40,8 @@
 
 ###
 
-<p align="right">```php<br>$replace = array(<br> '1' => 'Q', '2' => 'W', '3' => 'E', '4' => 'Z',<br> '5' => 'N', '6' => 'M', '7' => 'L', '8' => 'Y',<br> '9' => 'U', '0' => 'D', ';' => 'V',<br>);<br>```<br>در هنگام بازگشت از زرین‌پال، اطلاعات رمزگشایی شده و بررسی می‌شود.</p>
+```php<br>$replace = array(<br> '1' => 'Q', '2' => 'W', '3' => 'E', '4' => 'Z',<br> '5' => 'N', '6' => 'M', '7' => 'L', '8' => 'Y',<br> '9' => 'U', '0' => 'D', ';' => 'V',<br>);<br>```
+<p align="right">در هنگام بازگشت از زرین‌پال، اطلاعات رمزگشایی شده و بررسی می‌شود.</p>
 
 ###
 
@@ -56,7 +57,7 @@
 
 ###
 
-<p align="right">توضیح فایل ها :<br>modules/gateways/vozp.php فایل اصلی ماژول درگاه پرداخت<br>modules/gateways/callback/vozp.php بررسی وضعیت تراکنش و ثبت پرداخت</p>
+<p align="right">توضیح فایل ها :<br>modules/gateways/vozp.php : فایل اصلی ماژول درگاه پرداخت<br>modules/gateways/callback/vozp.php : بررسی وضعیت تراکنش و ثبت پرداخت</p>
 
 ###
 
@@ -64,7 +65,27 @@
 
 ###
 
-<p align="right">در فایل callback، تأیید تراکنش از طریق API زیر انجام می‌شود:<br>POST <https://api.zarinpal.com/pg/v4/payment/verify.json><br><br>پارامترهای ارسال‌شده:<br>```{<br>  "merchant_id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",<br>  "authority": "A00000000000000000000000000123456789",<br>  "amount": 10000<br>}```<br><br>در صورت موفقیت:<br><br>```{<br>  "data": {<br>    "code": 100,<br>    "ref_id": "1234567890"<br>  }<br>}```</p>
+<p align="right">در فایل callback، تأیید تراکنش از طریق API زیر انجام می‌شود:</p>
+POST <https://api.zarinpal.com/pg/v4/payment/verify.json>
+<br>
+<p align="right">پارامترهای ارسال‌شده:</p>
+```
+{
+    "merchant_id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+    "authority": "A00000000000000000000000000123456789",
+    "amount": 10000
+}
+```
+<br>
+<p align="right">در صورت موفقیت:</p>
+```
+{
+    "data": {
+        "code": 100,
+        "ref_id": "1234567890"
+    }
+}```
+
 
 ###
 
