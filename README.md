@@ -76,13 +76,7 @@ POST https://api.zarinpal.com/pg/v4/payment/verify.json
 
 <br>
 <p align="right">پارامترهای ارسال‌شده:</p>
-```php
-{
-    "merchant_id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-    "authority": "A00000000000000000000000000123456789",
-    "amount": 10000
-}
-```
+<pre> ```json { "merchant_id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", "authority": "A00000000000000000000000000123456789", "amount": 10000 } ``` </pre>
 <br>
 <p align="right">در صورت موفقیت:</p>
 ```php
